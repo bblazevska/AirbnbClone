@@ -1,0 +1,37 @@
+.cities{
+   max-width: 17.6rem;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 12rem;
+   row-gap: 5rem;
+   
+
+}
+
+.city{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-shrink:0;
+   
+   &__img{
+      height: 10rem;
+      border-radius: 2rem;
+      margin-right: 3rem;
+   }
+
+   &__text-box{
+      width: 15rem;
+   }
+   &__name,
+   &__distance{
+      display: block;
+      font-size: 1.8rem;
+   
+   }
+
+   &__name{
+      font-weight: 700;
+      margin-bottom: .5rem;
+   }
+}

@@ -25,6 +25,13 @@ body {
   line-height: 1;
 }
 
+.heading-secondary {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 2.5rem;
 }
@@ -44,6 +51,49 @@ body {
   background-color: #fff;
   border: 0.5px solid #fff;
   color: #222;
+}
+
+.cities {
+  max-width: 17.6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 12rem;
+          column-gap: 12rem;
+  row-gap: 5rem;
+}
+
+.city {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.city__img {
+  height: 10rem;
+  border-radius: 2rem;
+  margin-right: 3rem;
+}
+
+.city__text-box {
+  width: 15rem;
+}
+
+.city__name, .city__distance {
+  display: block;
+  font-size: 1.8rem;
+}
+
+.city__name {
+  font-weight: 700;
+  margin-bottom: .5rem;
 }
 
 .header {
@@ -169,5 +219,9 @@ body {
   width: 3.5rem;
   height: 3.5rem;
   fill: #717171;
+}
+
+.explore-section {
+  margin: 5rem;
 }
 /*# sourceMappingURL=main.css.map */
