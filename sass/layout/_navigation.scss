@@ -1,0 +1,89 @@
+.navigation{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 2rem 0;
+      color: $color-white;
+      font-size: 1.8rem;
+      line-height: 2;
+      font-weight: 500;
+      letter-spacing: 1px;
+   
+   &__logo--link{
+      color: inherit;
+   }
+   &__logo{
+      height: 4.5rem;
+      fill: currentColor;
+   }
+
+   &__list{
+      list-style: none;
+      display: flex;
+   }
+
+   &__link{
+      text-decoration: none;
+      color: inherit;
+      font-size: inherit;
+      padding: 1rem 1.6rem;
+      position: relative;
+
+      &:not(:last-child){
+         margin-right: 2rem;
+      }
+
+      &:hover{
+         color: #85a9c4e0;
+      }
+   }
+
+   &__user-box{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      
+   }
+   &__user-host{
+      display: inline-block;
+      padding: 1rem 2rem;
+      &:hover{
+         background-color: #85a9c45d;
+         border-radius: 3rem;
+      }
+   }
+   &__planet-icon{
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 2rem;
+      &:hover{
+         background-color: #85a9c45d;
+         border-radius: 50%;
+      }
+   }
+   &__button{
+      display: inline-block;
+      padding: 1rem;
+      height: 4.5rem;
+      display: flex;
+      align-items: center;
+      background-color: $color-white;
+      border-radius: 3rem;
+
+      
+      &--user-icon{
+         
+         &--i1{
+            width: 2.5rem;
+            height: 2.5rem;
+            color: $text-color;
+            margin-right: .5rem;
+         }
+         &--i2{
+            width: 3.5rem;
+            height: 3.5rem;
+            fill: $text-color-light;
+         }
+      }
+   }
+}
