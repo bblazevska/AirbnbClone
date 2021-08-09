@@ -13,5 +13,53 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.heading-primary {
+  color: #fff;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+.btn--white {
+  background-color: #fff;
+  border: 0.5px solid #fff;
+  color: #222;
+}
+
+.header {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.8))), url("/img/hero-3.jpg");
+  background-image: linear-gradient(to left bottom, transparent, rgba(0, 0, 0, 0.8)), url("/img/hero-3.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.header__text-box {
+  display: inline-block;
+  max-width: 18rem;
+  position: absolute;
+  left: 15rem;
+  bottom: 10rem;
 }
 /*# sourceMappingURL=main.css.map */
