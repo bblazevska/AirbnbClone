@@ -1,0 +1,27 @@
+.footer{
+   background-color: $color-grey-light-2;
+   border-top: 1px solid $color-grey-light;
+   
+   &__grid-container{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      column-gap: 3rem;
+   }
+
+   &__links{
+      list-style: none;
+
+   }
+   &__link{
+      display: block;
+   }
+   &__link:not(:last-child){
+      margin-bottom: 1rem;
+   }
+
+   &__link:link,
+   &__link:visited{
+      text-decoration: none;
+      color: $color-grey-dark;
+   }
+}

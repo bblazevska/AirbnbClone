@@ -374,11 +374,43 @@ body {
   fill: #717171;
 }
 
+.footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #ebebeb;
+}
+
+.footer__grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__link {
+  display: block;
+}
+
+.footer__link:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer__link:link, .footer__link:visited {
+  text-decoration: none;
+  color: #222;
+}
+
 .explore-section,
 .live-anywhere-section,
 .try-hosting-section,
 .discover-section,
-.ispiration-section {
+.ispiration-section,
+.footer__grid-container {
   margin: 10rem 12rem;
 }
 
