@@ -13,4 +13,35 @@
    background-color: $color-white;
    border: .5px solid $color-white;
    color: $color-grey-dark;
+
+   &--try{
+      width: 50%;
+      margin-top: 1.5rem;
+   }
+}
+
+.btn--destination:link,
+.btn--destination:visited{
+   display: inline-block;
+   background-color: inherit;
+   border: none;
+   font-size: 2rem;
+   line-height: 1.8rem;
+   text-decoration: none;
+   color: $text-color-light;
+   
+   border-radius: .8rem;
+   padding: 1rem;
+   margin: .6rem .6rem .6rem 0;
+
+   &:first-child{
+      margin-left: -1rem;
+   }
+   &:hover{
+      background-color: #eeeeee63;
+   }
+}
+.btn--destination:focus{
+   background-color: $color-white;
+   color: $text-color;
 }

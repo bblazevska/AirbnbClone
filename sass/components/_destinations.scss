@@ -1,0 +1,36 @@
+.destinations{
+
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1.5rem;
+
+}
+
+.destination__cities{
+   border-top: 1px solid $color-grey-light;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   row-gap: 1rem;
+}
+
+.destination{
+   
+   padding: 2rem 0;
+
+   &__link{
+      
+      text-decoration: none;
+   }
+
+   &__name{
+      display: block;
+      color: $text-color;
+      font-weight: 500;
+      font-size: 1.6rem;
+   }
+
+   &__country{
+      color: $text-color-light;
+   }
+}

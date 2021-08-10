@@ -17,6 +17,7 @@
 
 .discover{
    &__card{
+      transition: all .1s;
       &:hover{
          transform: scale(.9);
       }
