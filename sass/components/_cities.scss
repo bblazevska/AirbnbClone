@@ -4,8 +4,6 @@
    grid-template-columns: repeat(4, 1fr);
    column-gap: 12rem;
    row-gap: 5rem;
-   
-
 }
 
 .city{
@@ -15,7 +13,7 @@
    flex-shrink:0;
    
    &__img{
-      height: 10rem;
+      height: 12rem;
       border-radius: 2rem;
       margin-right: 3rem;
    }

@@ -1,0 +1,19 @@
+.live-anywhere__cards{
+   display: flex;
+   gap: 2.5rem;
+}
+
+.card-box{
+   &__img{
+      height: 37rem;
+      border-radius: 1rem;
+      margin-bottom: .5rem;
+      box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+      
+   }
+
+   &__title{
+      font-size: 2.6rem;
+      font-weight: 500;
+   }
+}

@@ -13,39 +13,39 @@
    <title>Airbnb: Vacation Rentals, Cabins, Beach Houses, Unique Homes & More</title>
 </head>
 <body>
-   <div class="container">
    <header class="header">
-   <nav class="navigation">
-      <div class="navigation__logo-box">
-         <a href="#" class="navigation__logo--link">
-            <img src="img/airbnb-logo-white.png" alt="Airbnb logo-white" class="navigation__logo">
-         </a>
-      </div>
-      <ul class="navigation__list">
-         <li class="navigation__item">
-            <a href="#" class="navigation__link">Places to stay</a>
-         </li>
-         <li class="navigation__item">
-            <a href="#" class="navigation__link">Experiences</a>
-         </li>
-         <li class="navigation__item">
-            <a href="#" class="navigation__link">Online Experiences</a>
-         </li>
-      </ul>
+      <div class="container">
+         <nav class="navigation">
+            <div class="navigation__logo-box">
+               <a href="#" class="navigation__logo--link">
+                  <img src="img/airbnb-logo-white.png" alt="Airbnb logo-white" class="navigation__logo">
+               </a>
+            </div>
+            <ul class="navigation__list">
+               <li class="navigation__item">
+                  <a href="#" class="navigation__link">Places to stay</a>
+               </li>
+               <li class="navigation__item">
+                  <a href="#" class="navigation__link">Experiences</a>
+               </li>
+               <li class="navigation__item">
+                  <a href="#" class="navigation__link">Online Experiences</a>
+               </li>
+            </ul>
 
-      <div class="navigation__user-box">
-         <span class="navigation__user-host">Become a host</span>
-         <ion-icon name="globe-outline" class="navigation__planet-icon"></ion-icon>
-         <div class="navigation__button">
-            <ion-icon name="menu-outline" 
-                  class="navigation__button--user-icon navigation__button--user-icon--i1"></ion-icon>
-            <ion-icon name="person-circle-outline"
-                  class="navigation__button--user-icon navigation__button--user-icon--i2"></ion-icon>
-            
-         </div>
+            <div class="navigation__user-box">
+               <span class="navigation__user-host">Become a host</span>
+               <ion-icon name="globe-outline" class="navigation__planet-icon"></ion-icon>
+               <div class="navigation__button">
+                  <ion-icon name="menu-outline" 
+                        class="navigation__button--user-icon navigation__button--user-icon--i1"></ion-icon>
+                  <ion-icon name="person-circle-outline"
+                        class="navigation__button--user-icon navigation__button--user-icon--i2"></ion-icon>
+                  
+               </div>
+            </div>
+         </nav>
       </div>
-   </nav>
-   
       <div class="header__text-box">
          <h1 class="heading-primary u-margin-bottom-small">Olympian& Paralympian Online Experiences</h1>
          <a href="#" class="btn btn--white">Explore now</a>
@@ -53,8 +53,10 @@
    </header>
 
    <main>
+      <div class="container">
       <section class="explore-section">
          <h2 class="heading-secondary">Explore nearby</h2>
+
          <div class="cities">
             
                <figure class="city">
@@ -113,11 +115,32 @@
                      <span class="city__distance">2 hour drive</span>
                   </figcaption>
                </figure>
-            
-         </div>
-      </section>
+            </div>
+         </section>
+
+         <section class="live-anywhere-section">
+            <h2 class="heading-secondary">Live anywhere</h2>
+            <div class="live-anywhere__cards">
+               <figure class="card-box">
+                  <img src="/img/pic-1.jpg" alt="photo of a house" class="card-box__img">
+                  <figcaption class="card-box__title">Outdoor getaways</figcaption>
+               </figure>
+               <figure class="card-box">
+                  <img src="/img/pic-2.jpg" alt="photo of a house on water" class="card-box__img">
+                  <figcaption class="card-box__title">Unique stays</figcaption>
+               </figure>
+               <figure class="card-box">
+                  <img src="/img/pic-3.jpg" alt="photo of a house" class="card-box__img">
+                  <figcaption class="card-box__title">Entire homes</figcaption>
+               </figure>
+               <figure class="card-box">
+                  <img src="/img/pic-4.webp" alt="dog sitting on bed" class="card-box__img">
+                  <figcaption class="card-box__title">Pets allowed</figcaption>
+               </figure>
+            </div>
+         </section>
+      </div>
    </main>
-</div>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
