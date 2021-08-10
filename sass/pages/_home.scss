@@ -1,4 +1,30 @@
 .explore-section,
-.live-anywhere-section{
+.live-anywhere-section,
+.try-hosting-section,
+.discover-section{
    margin: $section-margin;
+}
+
+.try-hosting-section{
+   background-image: url('/img/pic-8.jpg');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   height: 70rem;
+}
+.try-hosting{
+   position: absolute;
+   top: 50%;
+   left: 10%;
+
+   &__text-box{
+      color: $color-white;
+      display: flex;
+      flex-flow: column nowrap;
+      width: 40%;
+      font-size: 1.6rem;
+      justify-content: center;
+      align-items: left;
+      padding: 3.2rem 3.2rem 0 3.2rem;
+   }
 }
