@@ -8,6 +8,7 @@
 html {
   /* 1rem = 10px => 10px/16px = 62.5% */
   font-size: 62.5%;
+  position: relative;
 }
 
 body {
@@ -388,8 +389,22 @@ body {
           column-gap: 3rem;
 }
 
+.footer__heading {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
 .footer__links {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
 }
 
 .footer__link {
@@ -403,6 +418,91 @@ body {
 .footer__link:link, .footer__link:visited {
   text-decoration: none;
   color: #222;
+}
+
+.footer__copyright {
+  margin: 10rem 12rem 5rem 12rem;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #ebebeb;
+}
+
+.footer__icon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  fill: #484848;
+}
+
+.copy {
+  color: #484848;
+}
+
+.copy__dot {
+  margin-right: .3rem;
+  margin-left: .5rem;
+}
+
+.link:link, .link:visited {
+  text-decoration: none;
+  color: #484848;
+  margin-right: .5rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link--underline:link, .link--underline:visited {
+  text-decoration: underline;
+}
+
+.link--underline:hover {
+  color: #717171;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.lang-curr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #484848;
+}
+
+.lang-curr__link span {
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+.lang-curr__link:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  margin-right: 1rem;
 }
 
 .explore-section,

@@ -7,9 +7,16 @@
       grid-template-columns: repeat(4,1fr);
       column-gap: 3rem;
    }
-
+   &__heading{
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      font-weight: 500;
+   }
    &__links{
       list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
 
    }
    &__link{
@@ -24,4 +31,80 @@
       text-decoration: none;
       color: $color-grey-dark;
    }
+
+   &__copyright{
+      margin: 10rem 12rem 5rem 12rem;
+      padding: 3rem 0;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid $color-grey-light;
+
+   }
+
+   &__icon{
+      width: 2rem;
+      height: 2rem;
+      margin-left: 1rem;
+      fill: $text-color;
+
+   }
+}
+.copy{
+   color: $text-color;
+   
+   &__dot{
+      margin-right: .3rem;
+      margin-left: .5rem;
+   }
+}
+
+.link{
+   &:link,
+   &:visited{
+      text-decoration: none;
+      color: $text-color;
+      margin-right: .5rem;
+   }
+   &:hover{
+      text-decoration: underline;
+   }
+
+   &--underline{
+      &:link,
+      &:visited{
+         text-decoration: underline;
+      }
+
+      &:hover{
+         color: $text-color-light;
+      }
+   }
+}
+
+.socials{
+   display: flex;
+   align-items: center;
+   gap: 3rem;
+}
+
+.lang-curr{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: $text-color;
+
+   &__link{
+      span{
+         font-size: 1.6rem;
+         color: inherit;
+      }
+   }
+   &__link:first-child{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-right: 1rem;
+
+      
+}
 }
