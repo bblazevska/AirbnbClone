@@ -14,25 +14,25 @@
 </head>
 <body>
    <header class="header">
-      <div class="container">
          <nav class="navigation">
             <div class="navigation__logo-box">
                <a href="#" class="navigation__logo--link">
                   <img src="img/airbnb-logo-white.png" alt="Airbnb logo-white" class="navigation__logo">
                </a>
             </div>
-            <ul class="navigation__list">
-               <li class="navigation__item">
-                  <a href="#" class="navigation__link">Places to stay</a>
-               </li>
-               <li class="navigation__item">
-                  <a href="#" class="navigation__link">Experiences</a>
-               </li>
-               <li class="navigation__item">
-                  <a href="#" class="navigation__link">Online Experiences</a>
-               </li>
-            </ul>
-
+            <div class="navigation__box">
+               <ul class="navigation__list">
+                  <li class="navigation__item">
+                     <a href="#" class="navigation__link">Places to stay</a>
+                  </li>
+                  <li class="navigation__item">
+                     <a href="#" class="navigation__link">Experiences</a>
+                  </li>
+                  <li class="navigation__item">
+                     <a href="#" class="navigation__link">Online Experiences</a>
+                  </li>
+               </ul>
+             </div>
             <div class="navigation__user-box">
                <span class="navigation__user-host">Become a host</span>
                <ion-icon name="globe-outline" class="navigation__planet-icon"></ion-icon>
@@ -41,14 +41,39 @@
                         class="navigation__button--user-icon navigation__button--user-icon--i1"></ion-icon>
                   <ion-icon name="person-circle-outline"
                         class="navigation__button--user-icon navigation__button--user-icon--i2"></ion-icon>
-                  
                </div>
             </div>
          </nav>
+         <div class="search-box-container">
+            <div class="search__box">
+               <div class="box">
+
+                  <label for="where">Location</label>
+                  <input type="text" id="where" name="where" placeholder="Where are you going?">
+               </div>
+            </div>
+            <div class="search__box">
+               <label for="check-in">Check in</label>
+               <input type="text" id="check-in" name="check-in" placeholder="Add dates">
+            </div>
+            <div class="search__box">
+               <label for="check-out">Check out</label>
+               <input type="text" id="check-out" name="check-out" placeholder="Add dates">
+            </div>
+            <div class="last-box">
+               <div class="search__box">
+                  <label for="guests">Guests</label>
+                  <input type="text" id="guests" name="guests" placeholder="Add guests">
+               </div>
+               <ion-icon name="search" class="search-icon"></ion-icon>
+            </div>
+         </div>
       </div>
-      <div class="header__text-box">
-         <h1 class="heading-primary u-margin-bottom-small">Olympian& Paralympian Online Experiences</h1>
-         <a href="#" class="btn btn--white">Explore now</a>
+      <div class="container">
+         <div class="header__text-box">
+            <h1 class="heading-primary u-margin-bottom-small">Olympian& Paralympian Online Experiences</h1>
+            <a href="#" class="btn btn--white">Explore now</a>
+         </div>
       </div>
    </header>
 
