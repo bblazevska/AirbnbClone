@@ -36,18 +36,31 @@
             <div class="navigation__user-box">
                <span class="navigation__user-host">Become a host</span>
                <ion-icon name="globe-outline" class="navigation__planet-icon"></ion-icon>
-               <div class="navigation__button">
+               
+               <a class="navigation__button" href="#nav-popup">
                   <ion-icon name="menu-outline" 
                         class="navigation__button--user-icon navigation__button--user-icon--i1"></ion-icon>
                   <ion-icon name="person-circle-outline"
                         class="navigation__button--user-icon navigation__button--user-icon--i2"></ion-icon>
+                        
+               </a>
+               <div class="navigation__popup" id="nav-popup">
+                  <div class="navigation__popup--box">
+                  <a href="#" class="box__link box__link--sign">Sign up</a>   
+                  <a href="#" class="box__link">Log in</a>   
+                  </div>
+                  <div class="navigation__popup--box">
+                     <a href="#" class="box__link">Host your home</a>
+                     <a href="#" class="box__link">Host an experience</a>
+                     <a href="#" class="box__link">Help</a>
+                  </div>
                </div>
             </div>
          </nav>
+         
          <div class="search-box-container">
             <div class="search__box">
                <div class="box">
-
                   <label for="where">Location</label>
                   <input type="text" id="where" name="where" placeholder="Where are you going?">
                </div>
