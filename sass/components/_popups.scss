@@ -10,12 +10,11 @@
    //hide popup
    visibility: hidden;
    opacity: 0;
-   pointer-events: none;
+  
    
    // &:focus{
    //    visibility: visible;
    //    opacity: 1;
-   //    pointer-events: auto;
    // }
    
    &--box{
@@ -40,6 +39,7 @@
 .box__link{
    &:link,
    &:visited{
+      cursor: pointer;
       text-decoration: none;
       display: block;
       color: $text-color;
@@ -49,6 +49,7 @@
 
    &:hover{
       background-color: $color-grey-light-2;
+      cursor: pointer;
    }
 
 }

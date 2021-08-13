@@ -11,19 +11,43 @@
    -webkit-column-rule: 1px solid $color-grey-light;
    -moz-column-rule: 1px solid $color-grey-light;
    column-rule: 1px solid $color-grey-light;
-   width: 80rem;
-   margin-left: 45rem;
+   width: 90rem;
+   // margin-left: 45rem;
+   position: absolute;
+   top: 10rem;
+   left: 43rem;
 }
 
 .search__box{
-   width: 14rem;
-   margin-left: 1rem;
+   width: 16rem;
+   margin: 0 1rem;
+   background-color: inherit;
+   border-radius: 5rem;
+   padding: .5rem;
    overflow: hidden;
    cursor: pointer;
+   transition: all .3s;
+
+   &:hover{
+      background-color: $color-grey-light-2;
+      width: 18rem;
+      margin: 0;
+      cursor: inherit;
+      transform: scale(1.1);
+      &:last-child{
+         margin-left: 1rem;
+      }
+
+      input{
+         background-color: inherit;
+      }
+   }
+
    label{
       font-size: 1.2rem;
       letter-spacing: .5px;
       font-weight: 700;
+      
    }
    input{
       width: 100%;
@@ -33,18 +57,19 @@
          outline: none;
       }
    }
+   &--icon{
+      width: 3rem;
+      height: 2.6rem;
+      background-color: $color-primary;
+      fill: $color-white;
+      padding: 1rem;
+      border-radius: 50%;
+   }
 }
 
 .last-box{
    display: flex;
-   gap: 0;
+   gap: 1rem;
 }
 
-.search-icon{
-   width: 2rem;
-   height: 2rem;
-   background-color: $color-primary;
-   fill: $color-white;
-   padding: 1rem;
-   border-radius: 50%;
-}
+

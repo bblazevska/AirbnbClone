@@ -1,19 +1,62 @@
 .header{
-   height: 95vh;
-   background-image: linear-gradient(to left bottom,
+   height: 85vh;
+   background-image: linear-gradient(to top,
          transparent,
-         rgba(0,0,0, 0.8)),
-         url('/img/bg-image.jpg');
+         rgba(0,0,0, 0.3)),
+         url('/img/hero4.webp');
    background-size: cover;
-   background-position: bottom;
+   background-position: center;
    position: relative;
 
    &__text-box{
       display: inline-block;
-      max-width: 18rem;
+      max-width: 50rem;
       position: absolute;
-      left: 15rem;
-      bottom: 10rem;
-      margin-left: rem;
+      left: 47%;
+      top: 55%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__span{
+      display: block;
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+   &__button:link,
+   &__button:visited{
+      width: 70%;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      background-color: inherit;
+      color: $color-black;
+      box-shadow: 0 .6rem 1.6rem rgba(0,0,0, 0.12);
+      background-color: $color-white;
+      font-size: 1.8rem;
+      padding: 1.5rem;
+      border-radius: 5rem;
+      
+      &--text{
+         background-image: linear-gradient(90deg,rgb(111, 1, 156) 0%, rgb(198, 1, 126) 135.12%);  
+         -webkit-background-clip: text;
+         background-clip: text;
+      }
+      
    }
 }
+// .text-gradiant{
+   
+//    -webkit-text-fill-color: transparent;
+//    background-image: linear-gradient(90deg,rgb(111, 1, 156) 0%, rgb(198, 1, 126) 135.12%);
+   
+//    -webkit-background-clip: text;
+//    background-clip: text;
+//    color: transparent;
+   
+// }
