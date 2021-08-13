@@ -1,5 +1,5 @@
 .header{
-   height: 45vh;
+   height: 75vh;
    background-image: linear-gradient(to top,
          transparent,
          rgba(0,0,0, 0.3)),
@@ -9,8 +9,9 @@
    position: relative;
    margin-bottom: 5rem;
 
-   @include respond(desktop){
-      height: 40vh;
+   
+   @include respond(tab-land){
+      height: 60vh;
    }
 
    &__text-box{
@@ -34,6 +35,9 @@
       color: white;
       font-size: 2rem;
       font-weight: 700;
+      @include respond(tab-land){
+         font-size: 1.8rem;
+      }
    }
 
    &__button:link,
@@ -57,6 +61,10 @@
          background-clip: text;
       }
       
+      @include respond(tab-land){
+         font-size: 1.4rem;
+         width: 50%;
+      }
    }
 }
 // .text-gradiant{

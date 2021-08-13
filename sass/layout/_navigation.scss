@@ -12,6 +12,11 @@
       width: 100%;
       margin: 0 auto;
       // position: fixed;
+
+      @include respond(tab-land){
+         font-size: 1.4rem;
+         justify-content: space-around;
+      }
       
    &__logo--link{
       color: inherit;
@@ -19,11 +24,19 @@
    &__logo{
       height: 4.5rem;
       fill: currentColor;
+
+      @include respond(tab-land){
+         height: 3.5rem;
+      }
    }
 
    &__list{
       list-style: none;
       display: flex;
+
+      @include respond(tab-land){
+         justify-content: flex-end;
+      }
    }
 
    &__link{
@@ -48,6 +61,11 @@
       gap: .5rem;
       width: 32rem;
       position: relative;
+
+      @include respond(tab-land){
+         gap: 0;
+         justify-content: end;
+      }
       
    }
    &__user-host{
@@ -56,6 +74,9 @@
       &:hover{
          background-color: #00000025;
          border-radius: 3rem;
+      }
+      @include respond(tab-land){
+         padding: 1rem 0;
       }
    }
    &__planet-icon{
@@ -66,6 +87,12 @@
          background-color: #00000025;
          border-radius: 50%;
       }
+
+      @include respond(tab-land){
+         height: 2rem;
+         width: 2rem;
+         padding: 1;
+      }
    }
    &__button{
       display: inline-block;
@@ -75,7 +102,9 @@
       align-items: center;
       background-color: $color-white;
       border-radius: 3rem;
-
+      @include respond(tab-land){
+         height: 3.5rem;
+      }
       // &:target{
       //    visibility: visible;
       //    opacity: 1;
@@ -88,11 +117,21 @@
             height: 2.5rem;
             color: $text-color;
             margin-right: .5rem;
+
+            @include respond(tab-land){
+               height: 2rem;
+               width: 2rem;
+            }
          }
          &--i2{
             width: 3.5rem;
             height: 3.5rem;
             fill: $text-color-light;
+
+            @include respond(tab-land){
+               height: 2.5rem;
+               width: 2.5rem;
+            }
          }
       }
    }

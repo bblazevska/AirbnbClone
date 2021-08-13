@@ -13,6 +13,9 @@
    @include respond(desktop){
       font-size: 3.8rem;
    }
+   @include respond(tab-land){
+      font-size: 3.2rem;
+   }
 }
 .subheading{
    display: block;

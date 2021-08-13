@@ -28,9 +28,16 @@
       color: $text-color;
       font-weight: 500;
       font-size: 1.6rem;
+
+      @include respond(tab-land){
+         font-size: 1.4rem;
+      }
    }
 
    &__country{
       color: $text-color-light;
+      @include respond(tab-land){
+         font-size: 1.2rem;
+      }
    }
 }
