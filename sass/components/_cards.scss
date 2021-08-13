@@ -11,6 +11,9 @@
       margin-bottom: .5rem;
       box-shadow: 0 .5rem 1rem rgba($color-black, .1);
       
+      @include respond(desktop){
+         height: 30rem;
+      }
    }
 
 }
@@ -45,6 +48,10 @@
       width: 50rem;
       margin-bottom: 1rem;
       border-radius: 1rem;
+
+      @include respond(desktop){
+         width: 40rem;
+      }
    }
 }
 .card__description{

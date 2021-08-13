@@ -43,6 +43,10 @@
    &:hover{
       background-color: #eeeeee63;
    }
+
+   @include respond(desktop){
+      font-size: 1.8rem;
+   }
 }
 .btn--destination:focus{
    background-color: $color-white;

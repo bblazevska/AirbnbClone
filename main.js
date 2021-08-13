@@ -5,3 +5,13 @@
 //    nav_popup.classList.toggle('popup-show');
    
 // });
+
+// var navbar = document.querySelector('navigation');
+// var navLogo = document.querySelector('navber__logo');
+// var searchBox = document.querySelector('search-box-container');
+
+// window.onscroll( () =>{
+//    navbar.classList.toggle('scrolled');
+//    navLogo.style.fill = '$color-primary';
+//    searchBox.style.dispay = 'none';
+// });

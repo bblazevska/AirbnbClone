@@ -13,9 +13,11 @@
    column-rule: 1px solid $color-grey-light;
    width: 90rem;
    // margin-left: 45rem;
-   position: absolute;
-   top: 10rem;
-   left: 43rem;
+   margin: 0 auto;
+
+   @include respond(desktop){
+      width: 80rem;
+   }
 }
 
 .search__box{

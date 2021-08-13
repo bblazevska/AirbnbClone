@@ -6,6 +6,11 @@
       display: grid;
       grid-template-columns: repeat(4,1fr);
       column-gap: 3rem;
+
+      @include respond(desktop){
+         column-gap: 1rem;
+         padding: 2rem;
+      }
    }
    &__heading{
       text-transform: uppercase;
@@ -33,12 +38,16 @@
    }
 
    &__copyright{
-      margin: 10rem 12rem 5rem 12rem;
+      margin: 10rem 12rem 0 12rem;
       padding: 3rem 0;
       display: flex;
       justify-content: space-between;
       border-top: 1px solid $color-grey-light;
 
+      @include respond(desktop){
+         margin: 10rem 3rem 0 3rem;
+         padding: 1.5rem 0;
+      }
    }
 
    &__icon{

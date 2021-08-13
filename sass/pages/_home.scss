@@ -5,6 +5,10 @@
 .ispiration-section,
 .footer__grid-container{
    margin: $section-margin;
+
+   @include respond(desktop){
+      margin: $section-margin-desktop;
+   }
 }
 
 .try-hosting-section{
@@ -15,6 +19,9 @@
    height: 65rem;
    border-radius: 2rem;
    overflow: hidden;
+   @include respond(desktop){
+      height: 55rem;
+   }
 }
 .try-hosting{
    // background-color: $color-black;
@@ -39,6 +46,9 @@
       right: 10%;
       transform: translate(-50%, -50%);
       
-
+      @include respond(desktop){
+         width: 60%;
+         right: 0;
+      }
    }
 }

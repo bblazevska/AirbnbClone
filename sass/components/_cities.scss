@@ -4,6 +4,11 @@
    grid-template-columns: repeat(4, 1fr);
    column-gap: 12rem;
    row-gap: 5rem;
+
+   @include respond(desktop){
+      // grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+   }
 }
 
 .city{
@@ -16,6 +21,9 @@
       height: 12rem;
       border-radius: 2rem;
       margin-right: 3rem;
+      @include respond(desktop){
+         margin-right: 1.5rem;
+      }
    }
 
    &__text-box{
