@@ -15,7 +15,6 @@
    }
 
    @include respond(phone){
-      height: 50vh;
       background-position: right;
       
    }

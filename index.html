@@ -6,7 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
 
    <link rel="stylesheet" href="/sass/main.css">
    <link rel="shortcut icon" type="image/svg" href="img/airbnb-1.svg">
@@ -20,42 +22,48 @@
                   <img src="img/airbnb-logo-white.png" alt="Airbnb logo-white" class="navigation__logo">
                </a>
             </div>
-            <div class="navigation__box">
-               <ul class="navigation__list">
-                  <li class="navigation__item">
-                     <a href="#" class="navigation__link">Places to stay</a>
-                  </li>
-                  <li class="navigation__item">
-                     <a href="#" class="navigation__link">Experiences</a>
-                  </li>
-                  <li class="navigation__item">
-                     <a href="#" class="navigation__link">Online Experiences</a>
-                  </li>
-               </ul>
-             </div>
-            <div class="navigation__user-box">
-               <span class="navigation__user-host">Become a host</span>
-               <ion-icon name="globe-outline" class="navigation__planet-icon"></ion-icon>
-               
-               <a class="navigation__button" href="#nav-popup">
-                  <ion-icon name="menu-outline" 
-                        class="navigation__button--user-icon navigation__button--user-icon--i1"></ion-icon>
-                  <ion-icon name="person-circle-outline"
-                        class="navigation__button--user-icon navigation__button--user-icon--i2"></ion-icon>
-                        
-               </a>
-               <div class="navigation__popup" id="nav-popup">
-                  <div class="navigation__popup--box">
-                  <a href="#" class="box__link box__link--sign">Sign up</a>   
-                  <a href="#" class="box__link">Log in</a>   
-                  </div>
-                  <div class="navigation__popup--box">
-                     <a href="#" class="box__link">Host your home</a>
-                     <a href="#" class="box__link">Host an experience</a>
-                     <a href="#" class="box__link">Help</a>
+            <div class="navigation__main">
+               <div class="navigation__box">
+                  <ul class="navigation__list">
+                     <li class="navigation__item">
+                        <a href="#" class="navigation__link">Places to stay</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a href="#" class="navigation__link">Experiences</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a href="#" class="navigation__link">Online Experiences</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="navigation__user-box">
+                  <span class="navigation__user-host">Become a host</span>
+                  <ion-icon name="globe-outline" class="navigation__planet-icon"></ion-icon>
+                  
+                  <a class="navigation__button" href="#nav-popup">
+                     <ion-icon name="menu-outline" 
+                     class="navigation__button--user-icon navigation__button--user-icon--i1"></ion-icon>
+                     <ion-icon name="person-circle-outline"
+                     class="navigation__button--user-icon navigation__button--user-icon--i2"></ion-icon>
+                     
+                  </a>
+                  <div class="navigation__popup" id="nav-popup">
+                     <div class="navigation__popup--box">
+                        <a href="#" class="box__link box__link--sign">Sign up</a>   
+                        <a href="#" class="box__link">Log in</a>   
+                     </div>
+                     <div class="navigation__popup--box">
+                        <a href="#" class="box__link">Host your home</a>
+                        <a href="#" class="box__link">Host an experience</a>
+                        <a href="#" class="box__link">Help</a>
+                     </div>
                   </div>
                </div>
             </div>
+            <button class="btn__mobile-nav">
+               <ion-icon name="reorder-three-outline" class="icon-mobile-nav"></ion-icon>
+               <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+            </button>
          </nav>
          
          <div class="search-box-container">
