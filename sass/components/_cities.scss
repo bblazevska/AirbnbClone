@@ -17,6 +17,10 @@
    @include respond(tab-port){
       column-gap: 2rem;
    }
+   @include respond(phone){
+    grid-template-columns: .5fr;
+    justify-content: center;  
+   }
 }
 
 .city{

@@ -17,6 +17,10 @@
          font-size: 1.2rem;
          justify-content: space-around;
       }
+
+      @include respond(tab-port){
+         padding: 3rem 0;
+      }
       
    &__logo--link{
       color: inherit;
@@ -27,6 +31,9 @@
 
       @include respond(tab-land){
          height: 3.5rem;
+      }
+      @include respond(tab-port){
+         margin-left: 2rem;
       }
    }
 

@@ -22,6 +22,10 @@
       width: 60rem;
       padding: .5rem;
    }
+   @include respond(phone){
+      visibility: hidden;
+      pointer-events: none;
+   }
 }
 
 .search__box{

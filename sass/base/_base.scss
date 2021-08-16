@@ -30,4 +30,8 @@ body{
    @include respond(tab-port){
       margin: 0 2rem;
    }
+
+   @include respond(phone){
+      max-width: 80rem;
+   }
 }

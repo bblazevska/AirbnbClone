@@ -24,6 +24,10 @@
          width: 60%;
          font-size: 1.6rem;
       }
+      @include respond(phone){
+         font-size: 1.4rem;
+         width: 80%;
+      }
    }
 }
 
@@ -63,6 +67,8 @@
 
    @include respond(tab-port){
       overflow: scroll;
+      font-size: 1.4rem;
+      padding-left: 2rem;
    }
 }
 .btn--destination:focus{

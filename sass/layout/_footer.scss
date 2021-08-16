@@ -12,6 +12,13 @@
          padding: 2rem;
       }
 
+      @include respond(phone){
+         grid-template-columns: 1fr 1fr;
+         row-gap: 5rem;
+         margin-bottom: 4rem !important;
+         justify-items: center;
+      }
+
       
    }
    &__heading{
@@ -58,6 +65,13 @@
 
       @include respond(tab-port){
          margin: 5rem 0 0 0;
+      }
+
+      @include respond(phone){
+         display: grid;
+         grid-template-columns: 1;
+         row-gap: 1rem;
+         justify-content: center;
       }
    }
 
@@ -119,6 +133,10 @@
 
    @include respond(tab-port){
       gap: .5rem;
+   }
+
+   @include respond(phone){
+      justify-self: center;
    }
 }
 

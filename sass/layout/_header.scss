@@ -14,6 +14,12 @@
       height: 60vh;
    }
 
+   @include respond(phone){
+      height: 50vh;
+      background-position: right;
+      
+   }
+
    &__text-box{
       display: inline-block;
       max-width: 50rem;
@@ -28,6 +34,10 @@
       @include respond(desktop){
          top: 65%;
       }
+      @include respond(phone){
+         left: 50%;
+         top: 75%;
+      }
    }
 
    &__span{
@@ -37,6 +47,11 @@
       font-weight: 700;
       @include respond(tab-land){
          font-size: 1.8rem;
+      }
+
+      @include respond(phone){
+         font-size: 1.6rem;
+         margin-bottom: 1.5rem;
       }
    }
 
@@ -64,6 +79,10 @@
       @include respond(tab-land){
          font-size: 1.4rem;
          width: 50%;
+      }
+      @include respond(phone){
+         width: 60%;
+         padding: 1rem .5rem;
       }
    }
 }

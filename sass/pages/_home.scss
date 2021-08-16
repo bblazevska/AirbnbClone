@@ -9,6 +9,9 @@
    @include respond(desktop){
       margin: $section-margin-desktop;
    }
+   @include respond(phone){
+      margin: $section-margin-phone;
+   }
 }
 
 .try-hosting-section{
@@ -28,6 +31,9 @@
    }
    @include respond(tab-port){
       height: 35rem;
+   }
+   @include respond(phone){
+    height: 30rem;  
    }
 }
 .try-hosting{
@@ -71,6 +77,10 @@
          .heading-secondary{
             text-align: start;
          }
+      }
+      @include respond(phone){
+         padding: 1rem 0 0 3rem;
+         font-size: 1.2rem;
       }
    }
 }

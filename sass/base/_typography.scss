@@ -21,6 +21,9 @@
       font-size: 3rem;
       text-align: center;
    }
+   @include respond(phone){
+      font-size: 2.6rem;
+   }
 }
 .subheading{
    display: block;
@@ -34,6 +37,9 @@
       font-size: 2.2rem;
       text-align: center;
    }
+   @include respond(phone){
+    font-size: 2rem;  
+   }
 }
 .card__title{
    display: block;
@@ -45,5 +51,9 @@
    }
    @include respond(tab-port){
       font-size: 2rem;
+   }
+
+   @include respond(phone){
+      font-size: 1.8rem;
    }
 }
