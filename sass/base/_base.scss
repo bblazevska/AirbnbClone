@@ -27,4 +27,7 @@ body{
       max-width: 105rem;
       margin: 0 5rem;
    }
+   @include respond(tab-port){
+      margin: 0 2rem;
+   }
 }

@@ -26,6 +26,9 @@
    @include respond(tab-land){
       height: 45rem;
    }
+   @include respond(tab-port){
+      height: 35rem;
+   }
 }
 .try-hosting{
    // background-color: $color-black;
@@ -35,6 +38,7 @@
 
    position: relative;
 
+   
 
    &__text-box{
       color: $color-white;
@@ -58,6 +62,15 @@
          font-size: 1.4rem;
          width: 70%;
          right: -10%;
+      }
+
+      @include respond(tab-port){
+         width: 100%;
+         right: -50%;
+
+         .heading-secondary{
+            text-align: start;
+         }
       }
    }
 }

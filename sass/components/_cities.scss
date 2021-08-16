@@ -6,12 +6,16 @@
    row-gap: 5rem;
 
    @include respond(desktop){
-      // grid-template-columns: repeat(3, 1fr);
       column-gap: 2rem;
    }
    @include respond(tab-land){
-      // grid-template-columns: repeat(3, 2fr);
-      column-gap: 0rem;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20rem;
+      max-width: 100%;
+   }
+
+   @include respond(tab-port){
+      column-gap: 2rem;
    }
 }
 
@@ -30,7 +34,7 @@
       }
 
       @include respond(tab-land){
-         height: 10rem;
+         // height: 10rem;
          margin-right: 1rem;
       }
    }
@@ -44,7 +48,7 @@
       font-size: 1.8rem;
       
       @include respond(tab-land){
-         font-size: 1.4rem;
+         font-size: 1.6rem;
       }
    }
 

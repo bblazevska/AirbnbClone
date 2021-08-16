@@ -51,10 +51,18 @@
 
    @include respond(desktop){
       font-size: 1.8rem;
+      overflow: scroll;
    }
    @include respond(tab-land){
       font-size: 1.6rem;
       padding: .5rem;
+      &:not(:last-child){
+         margin: .6rem .8rem .6rem 0;
+      }
+   }
+
+   @include respond(tab-port){
+      overflow: scroll;
    }
 }
 .btn--destination:focus{
