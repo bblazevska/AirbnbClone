@@ -1,7 +1,7 @@
 *{
    margin: 0;
    padding: 0;
-   box-sizing: inherit;
+   box-sizing: border-box;
 }
 
 html{
@@ -33,5 +33,6 @@ body{
 
    @include respond(phone){
       max-width: 80rem;
+      margin: 0 1rem;
    }
 }

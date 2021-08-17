@@ -35,7 +35,8 @@
       }
       @include respond(phone){
          left: 50%;
-         top: 75%;
+         top: 60%;
+         transform: translate(-50%,-50%);
       }
    }
 

@@ -8,7 +8,7 @@
    transition: opacity .5;
 
    //hide popup
-   visibility: hidden;
+  display: none;
    opacity: 0;
   
    
@@ -27,6 +27,10 @@
          margin-bottom: .6rem;
          padding-top: .6rem;
       }
+   }
+   .show{ 
+      display: block;
+      pointer-events: auto;
    }
 }
 

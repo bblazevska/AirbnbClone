@@ -1,7 +1,7 @@
 .navigation{
       box-sizing: inherit;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       padding: 3rem 5rem;
       color: $color-white;
@@ -19,22 +19,26 @@
       }
 
       @include respond(tab-port){
-         // max-width: 100rem;
+         max-width: 100rem;
          line-height: 1;
+         justify-content: space-between;
       }
 
       @include respond(phone){
-         padding: 3rem 25rem;
+         
          margin: 0 auto;
+      
       }
 
       &__main{
          display:  flex;
+         justify-content: space-between;
          align-items: center;
+
          @include respond(tab-port){
             //hide main navigation
             opacity: 0;
-            visibility: hidden;
+            display: none;
             pointer-events: none;
          }
       }
@@ -47,9 +51,6 @@
 
       @include respond(tab-land){
          height: 3.5rem;
-      }
-      @include respond(tab-port){
-         margin-left: 10rem;
       }
    }
 
@@ -140,14 +141,11 @@
       align-items: center;
       background-color: $color-white;
       border-radius: 3rem;
+      cursor: pointer;
       @include respond(tab-land){
          height: 3.5rem;
       }
-      // &:target{
-      //    visibility: visible;
-      //    opacity: 1;
-      //    pointer-events: auto;
-      // }
+      
       &--user-icon{
          
          &--i1{
@@ -186,12 +184,11 @@
    display: none;
    margin-right: 5rem;
 
-   @include respond(tab-land){
-      margin-right: 20rem;
-   }
    @include respond(tab-port){
+      margin: 0;
       display: block;
       z-index: 1000;
+      justify-self: end;
    }
  }
  .icon-mobile-nav {

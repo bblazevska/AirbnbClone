@@ -50,7 +50,8 @@
          height: 40rem;
       }
       @include respond(phone){
-         height: 35rem;
+         // height: 35rem;
+         width: 100%;
       }
    }
 
@@ -119,7 +120,8 @@
       }
 
       @include respond(phone){
-         min-width: 30rem;
+         max-width: 35rem;
+         // width: 90%;
       }
    }
 }

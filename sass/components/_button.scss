@@ -1,77 +1,78 @@
-.btn{
-   display: inline-block;
-   border: none;
-   padding: 1rem 2rem;
-   font-size: 2rem;
-   font-weight: 500;
-   text-decoration: none;
-   border-radius: 1.5rem;
-   text-align: center;
-
-   
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  text-align: center;
 }
 
-.btn--white{
-   background-color: $color-white;
-   border: .5px solid $color-white;
-   color: $color-grey-dark;
+.btn--white {
+  background-color: $color-white;
+  border: 0.5px solid $color-white;
+  color: $color-grey-dark;
 
-   &--try{
-      width: 50%;
-      margin-top: 1.5rem;
+  &--try {
+    width: 50%;
+    margin-top: 1.5rem;
 
-      @include respond(tab-land){
-         width: 60%;
-         font-size: 1.6rem;
-      }
-      @include respond(phone){
-         font-size: 1.4rem;
-         width: 80%;
-      }
-   }
+    @include respond(tab-land) {
+      width: 60%;
+      font-size: 1.6rem;
+    }
+    @include respond(phone) {
+      font-size: 1.4rem;
+      width: 80%;
+    }
+  }
 }
-
 
 .btn--destination:link,
-.btn--destination:visited{
-   display: inline-block;
-   background-color: inherit;
-   border: none;
-   font-size: 2rem;
-   line-height: 1.8rem;
-   text-decoration: none;
-   color: $text-color-light;
-   
-   border-radius: .8rem;
-   padding: 1rem;
-   margin: .6rem .6rem .6rem 0;
+.btn--destination:visited {
+  display: inline-block;
+  background-color: inherit;
+  border: none;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+  color: $text-color-light;
 
-   &:first-child{
-      margin-left: -1rem;
-   }
-   &:hover{
-      background-color: #eeeeee63;
-   }
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin: 0.6rem 0.6rem 0.6rem 0;
+  white-space: nowrap;
+  &:first-child {
+    margin-left: -1rem;
+  }
+  &:hover {
+    background-color: #eeeeee63;
+  }
 
-   @include respond(desktop){
-      font-size: 1.8rem;
-      overflow: scroll;
-   }
-   @include respond(tab-land){
-      font-size: 1.6rem;
-      padding: .5rem;
-      &:not(:last-child){
-         margin: .6rem .8rem .6rem 0;
-      }
-   }
+  @include respond(desktop) {
+    font-size: 1.8rem;
+    overflow: scroll;
+  }
+  @include respond(tab-land) {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    &:not(:last-child) {
+      margin: 0.6rem 0.8rem 0.6rem 0;
+    }
+  }
 
-   @include respond(tab-port){
-      overflow: scroll;
-      font-size: 1.4rem;
-      padding-left: 2rem;
-   }
+  @include respond(tab-port) {
+    overflow: scroll;
+    font-size: 1.4rem;
+    padding-left: 2rem;
+  }
 }
-.btn--destination:focus{
-   background-color: $color-white;
-   color: $text-color;
+.btn--destination {
+  &:active,
+  &:focus {
+      color: $color-black;
+      background-color: transparent;
+      position: relative; 
+  }
 }

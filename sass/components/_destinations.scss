@@ -12,6 +12,9 @@
    @include respond(tab-port){
       overflow: scroll;
    }
+   @include respond(phone){
+      padding: 0;
+   }
 
 }
 
@@ -28,6 +31,7 @@
    @include respond(phone){
       grid-template-columns: 1fr 1fr;
       justify-items: center;
+     width: 100%; 
    }
 }
 

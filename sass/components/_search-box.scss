@@ -23,7 +23,8 @@
       padding: .5rem;
    }
    @include respond(phone){
-      visibility: hidden;
+      // visibility: hidden;
+      display: none;
       pointer-events: none;
    }
 }
